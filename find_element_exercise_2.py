@@ -13,10 +13,10 @@ driver.get(" SERVER URL ")
 time.sleep(2)
 
 # Find all elements on the page using an XPath selector
-elements = driver...
+elements = driver.find_elements(By.XPATH,"//div[@class='dsp-picker-marker']")
 
 # Check that the number of elements found is greater than 1 by using len()
-...
+assert len(elements) > 1
 
 # Close the browser and end the WebDriver session
-driver...
+driver.quit()

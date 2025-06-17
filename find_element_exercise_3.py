@@ -13,12 +13,12 @@ driver.get(" SERVER URL ")
 time.sleep(2)
 
 # Find the FROM input field and TO input field using their IDs
-from_field = driver...
-to_field = driver...
+from_field = driver.find_element(By.ID,"from")
+to_field = driver.find_element(By.ID,"to")
 
 # Test the placeholder attribute for each input field to ensure they display the correct text
-assert ...
-assert ...
+assert from_field.get_attribute('placeholder') == "East 2nd Street, 601"
+assert to_field.get_attribute('placeholder') == "1300 1st St"
 
 # Close the browser and end the WebDriver session
-driver...
+driver.quit()

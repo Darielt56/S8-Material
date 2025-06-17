@@ -13,7 +13,7 @@ driver.get(" SERVER URL ")
 time.sleep(2)
 
 # Find the title element using its CSS Selector
-driver...
+driver.find_element(By.CSS_SELECTOR,".logo-disclaimer")
 
 # Close the browser and end the WebDriver session
-driver...
+driver.quit()
